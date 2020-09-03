@@ -1,0 +1,90 @@
+<!DOCTYPE "html">
+
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1, width=device-width">
+<title>iGFitness</title>
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+	
+<body>
+
+<div id="master">
+	
+	<nav>
+		<div class="logo">
+			<a href="#"><img src="/static/images/logo.png"></a>
+		</div>
+		<ul class="navLinks">
+			
+			<ul class="dropFlex">
+				<li><a class="hide" href="#">Home</a></li>
+				<div class="dropdown">
+					<li><a href="{{ url_for('index') }}">Home</a></li>
+					<li><a href="#">Why us?</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">Contact</a></li>
+				</div>
+			</ul>
+			<li><a href="#">Bookings</a></li>
+			<li><a href="#">Meal Prep</a></li>
+			<ul>
+				<li><a href="#">Fitness Programs</a></li>
+				<div class="dropdown">
+					<li><a href="#">Bootcamp</a></li>
+					<li><a href="#">Personal Training</a></li>
+				</div>
+			</ul>
+			<li><a href="#">Store</a></li>
+			<li><a href="#">Cart</a></li>
+		</ul>
+		<input type="checkbox" class="toggler">
+		<div class="hamburger"><div></div></div>
+	</nav>
+	
+	{% block content %}{% endblock %}
+	<div id="footer">
+		<div class="list">
+			<ul>
+				<li><a href="#">MORE</a></li>
+				<li><a href="#">GYM MEMBERSHIP</a></li>
+				<li><a href="#">BLOG</a></li>
+				<li><a href="#">STORE</a></li>
+			</ul>
+		</div>
+		
+		<div class="list">
+			<ul>
+				<li><a href="#">HELP</a></li>
+				<li><a href="#">TELEPHONE</a></li>
+			</ul>
+			
+			<div class="icons">
+				<a href="#"><img src="/static/images/twitter.png"></a>
+				<a href="#"><img src="/static/images/facebook.png"></a>
+				<a href="#"><img src="/static/images/mail.png"></a>
+				<a href="#"><img src="/static/images/instagram.png"></a>
+			</div>
+		</div>
+		
+		
+		
+		<div class="listR">
+			<ul>
+				<li>FIND US</li>
+				<li>ADDRESS</li>
+				<li>TOWN</li>
+				<li>POSTCODE</li>
+				<li>OPENING TIMES</li>
+			</ul>
+		</div>
+		
+		
+	</div>
+	
+</div>
+<script src="/static/script.js"></script>
+</body>
+</html>
